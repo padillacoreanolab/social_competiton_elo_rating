@@ -18,7 +18,3 @@ conda install -c conda-forge notebook --yes
 conda install -c conda-forge pandas --yes
 conda install -c conda-forge openpyxl --yes
 conda install -c conda-forge matplotlib --yes
-conda install -c conda-forge scipy --yes
-conda install -c conda-forge seaborn --yes
-conda install -c conda-forge opencv --yes
-conda install -c anaconda pylint --yes
