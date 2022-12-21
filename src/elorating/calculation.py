@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
+"""Elo Rating Calculator
+
+Based on: https://www.omnicalculator.com/sports/elo
 """
-"""
-import re
 import operator
 from collections import defaultdict
 import pandas as pd
-from pyparsing import col
 
 def calculate_elo_rating(subject_elo_rating, agent_elo_rating, k_factor=20, score=1, number_of_decimals=1):
     """
