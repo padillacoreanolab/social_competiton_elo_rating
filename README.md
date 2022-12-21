@@ -20,7 +20,6 @@
 - The Command-line interface is where we type in commands to make a computer do various tasks. This interface is presented by programs that are usually called the "terminal." 
     - For more information: https://en.wikipedia.org/wiki/Command-line_interface
 
-https://code.visualstudio.com/Download
 1. Before starting, you must pick a program for your Command-line interface.
     - For Mac, we recommend the Terminal application.
         - Instructions on how to use the Terminal: https://macpaw.com/how-to/use-terminal-on-mac
@@ -32,10 +31,22 @@ https://code.visualstudio.com/Download
 1.1 When editing and reading code, it is helpful to use a code editor that has features specific to programing. We recommend downloading Visual Studio Code. 
     - Download Link: https://code.visualstudio.com/Download
 
-### Step 1. Clone this repository 
-1. Check if you have the Git program on your computer. Open up Command-line interface program. We recommend Command Prompt for Windows, and Terminal for Mac. 
+### Step 1(GUI Version). Clone this repository 
+0. If using Windows or Mac, install the Github GUI from https://desktop.github.com/
 
-https://desktop.github.com/
+1. Open the Github Desktop application, and click `File` >> `Clone Repository`
+
+2. Click on the `URL` tab, and copy the link to the repository into the `Repository URL` prompt. 
+    - Link to this repository https://github.com/padillacoreanolab/social_competiton_elo_rating.git
+
+3. Choose the path that you want to clone the Github Repository into and click `Clone`
+    - We recommend: `{user_directory}/Documents/Github`
+
+4. Go to the folder of the Github Repository, and open up the terminal to that folder.
+    - If you right click in the file explorer, there will usually be an option to open the terminal from the folder. If not, then open the terminal and navigate to the folder with `cd {user_directory}/Documents/Github/social_competiton_elo_rating`
+
+### Step 1(Command Line Version). Clone this repository
+1. Check if you have the Git program on your computer. Open up Command-line interface program. We recommend Command Prompt for Windows, and Terminal for Mac. 
 
 1.1 In the terminal, type `git` then enter. 
     - Documentation of Git should be displayed if it is properly installed on your computer. If it says that command is not recognized or that the program doesn't exist, then install it with one of the following instructions: 
