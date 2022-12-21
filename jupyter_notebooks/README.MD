@@ -11,11 +11,11 @@
 2. Create a `data` folder in the folder your created, and copy all your behavior spreadsheets into it.
 
 3. Make sure that Conda Environment is activated. If it is, in your terminal there should be the environment path in `()` next to your command line. e.g. Something like `(/nancy/projects/social_competiton_elo_rating/elo_rating_env) riwata@godzilla:/nancy/projects/social_competiton_elo_rating $`
-    - If not, then follow the directions here to activate it or to create one. [../conda_environment/environment_install.sh](../conda_environment/environment_install.sh)
+    - If not, then follow the directions here to activate it or to create one. [../conda_environment/README.md](../conda_environment/README.md)
 
 4. From the root directory [../](../) , start Jupyter Notebook with the command `jupyter notebook --allow-root` in your terminal and press `Enter`.
 
-5. Navigate to the folder you created Jupyter Notebook GUI that should pop in your internet browser. If you start in the root directory, you will click on `results` >> `{folder_that_you_created}`. 
+5. Navigate to the folder you created with the Jupyter Notebook GUI, which should pop in your internet browser. If you start in the root directory, you will click on `results` >> `{folder_that_you_created}`. 
 
 6. Click on the Jupyter Notebook you copied(the `.ipynb` file), and then run with `Kernel` > `Restart & Run All`
 
