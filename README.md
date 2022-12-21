@@ -1,23 +1,24 @@
 # Behavioral Dataframe Processing
 
 ## Overview 
-
-- This project helps calculate the ELO score for different social competition assays. The data collected for these assays are Excel sheets that are used during the recording. The assays includes tube test, urine marking, home cage observation, and reward competition. ELO scores keep track of the overall performance for a given subject, which can be compared to other subjects within the same cage to approximate the "ranking". Because the assays have multiple recordings for each subject, the ELO scores will be calculated after each interaction.
+- This project helps calculate the ELO rating for different social competition assays. The data collected for these assays are Excel sheets that are used during the recording. The assays includes tube test, urine marking, home cage observation, and reward competition. ELO ratings keep track of the overall performance for a given subject, which can be compared to other subjects within the same cage to approximate the "ranking". Because the assays have multiple recordings for each subject, the ELO ratings will be calculated after each interaction.
 
 ## Repository Organization
 - [./jupyter_notebooks](./jupyter_notebooks)
-    - Directory that has the Jupyter Notebooks to extract/process the MED-PC and the accompanying dataframes/plots that are created from it.
+    - Directory that has the Jupyter Notebooks to calculate the ELO ratings and create the accompanying dataframes/plots. These notebooks will be copied into [./results](./results)
 - [./results](./results)
-    - Directory that has a record of previous iterations of the Jupyter Notebooks 
+    - Directory to store individual analysis. We recommend naming the folder in this convention: `{date}_{overall experiment name}_{protocol}`
+        - e.g. `20221220_pilot3_tubetest` 
 - [./src](./src)
     - Directory that has the Python source code used in the Jupyter Notebooks. All the original functions used in the notebooks will be imported from this.
-`TODO`: Add sections on `conda environments`
+- [./conda_environment](./conda_environment)
+    - Directory to create and store the Conda Environment to run Jupyter Notebooks and calculate ELO score.
 
 ## Steps To Take
 
 ### Step 0: Learn how to use the Command Line
 - The Command-line interface is where we type in commands to make a computer do various tasks. This interface is presented by programs that are usually called the "terminal." 
-    - For  more information: https://en.wikipedia.org/wiki/Command-line_interface
+    - For more information: https://en.wikipedia.org/wiki/Command-line_interface
 
 https://code.visualstudio.com/Download
 1. Before starting, you must pick a program for your Command-line interface.
@@ -70,5 +71,5 @@ https://desktop.github.com/
 
 ## Resources
 
-### ELO Score
+### ELO rating
 - https://www.omnicalculator.com/sports/elo
