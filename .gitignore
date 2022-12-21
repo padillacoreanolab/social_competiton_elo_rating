@@ -1,3 +1,15 @@
+# Conda environment related files and folders
+*env
+
+# Project related files and folders
+data/
+proc/
+old/
+back_up/
+*xlsx
+*pylint*
+*processing.py*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
