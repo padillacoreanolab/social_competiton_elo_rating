@@ -59,9 +59,9 @@
         - Mac: https://www.josharcher.uk/code/find-path-to-folder-on-mac/
         - Windows: https://www.computerhope.com/issues/ch001708.htm
 
-2.1 Download the Github repository with the command: `git clone https://github.com/padillacoreanolab/behavioral_dataframe_processing`
+2.1 Download the Github repository with the command: `git clone https://github.com/padillacoreanolab/social_competiton_elo_rating`
     - NOTE: Every time you use this repo after cloning it, check for updates with: 
-        - `cd {./path/to}/behavioral_dataframe_processing`
+        - `cd {./path/to}/social_competiton_elo_rating`
         - `git pull origin main`
 
 ### Step 2. Create Conda Environment to Install Necessary Python libraries
