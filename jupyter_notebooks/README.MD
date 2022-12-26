@@ -17,8 +17,14 @@
 
 5. Navigate to the folder you created with the Jupyter Notebook GUI, which should pop in your internet browser. If you start in the root directory, you will click on `results` >> `{folder_that_you_created}`. 
 
-6. Click on the Jupyter Notebook you copied(the `.ipynb` file), and then run with `Kernel` > `Restart & Run All`
+6. Click on the Jupyter Notebook you copied(the `.ipynb` file)
 
 7. Follow the instructions in the Jupyter Notebook and change any of the default variable values to better suit your file structure and naming convention.
+
+8. Run the notebook:
+    - 8a. All at once with `Kernel` > `Restart & Run All`
+    - 8b. Or each cell(block) individually by clicking on the block. Then click `Run` button with the play button or use the run command with `Shift + Enter` 
+
+
 
 8. Analyze spreadsheets and plots created in `./proc` that will be created. 
