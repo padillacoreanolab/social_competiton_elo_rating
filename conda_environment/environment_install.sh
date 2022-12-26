@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Moving to the root directory of the Github repo
-cd $(git rev-parse --show-toplevel)
+# This does not seem to work with Windows, so go to the folder titled social_competiton_elo_rating
+# cd $(git rev-parse --show-toplevel)
 
 # Turning off the Conda Environment 
 # so that you don't add anything onto an existing environment
