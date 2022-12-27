@@ -85,7 +85,7 @@ def get_ranking_from_elo_rating_dictionary(input_dict, subject_id):
     return [subject_tuple[0] for subject_tuple in sorted_subject_to_elo_rating].index(subject_id) + 1
 
 
-def iterate_elo_rating_calculation_for_dataframe(dataframe, winner_column, loser_column, tie_column=None, additional_columns=None):
+def iterate_elo_rating_calculation_for_dataframe(dataframe, winner_id_column, loser_id_column, tie_column=None, additional_columns=None):
     """
     Iterates through a dataframe that has the ID of winners and losers for a given event. 
     A dictionary will be created that contains the information of the event, 
@@ -93,8 +93,8 @@ def iterate_elo_rating_calculation_for_dataframe(dataframe, winner_column, loser
 
     Args:
         dataframe(Pandas DataFrame): 
-        winner_column(str): The name of the column that has the winner's ID
-        loser_column(str): The name of the column that has the loser's ID
+        winner_id_column(str): The name of the column that has the winner's ID
+        loser_id_column(str): The name of the column that has the loser's ID
         additional_columns(list): Additional columns to take from the 
 
     Returns:
@@ -116,11 +116,11 @@ def iterate_elo_rating_calculation_for_dataframe(dataframe, winner_column, loser
     # Keeping track of the number of matches
     total_match_number = 1
 
-    for index, row in dataframe.dropna(subset=winner_column).iterrows():
+    for index, row in dataframe.dropna(subset=winner_id_column).iterrows():
         # Getting the ID of the winner subject
-        winner_id = row[winner_column]
+        winner_id = row[winner_id_column]
         # Getting the ID of the loser subject
-        loser_id = row[loser_column]
+        loser_id = row[loser_id_column]
 
         # Getting the current Elo Score
         current_winner_rating = id_to_elo_rating[winner_id] 
