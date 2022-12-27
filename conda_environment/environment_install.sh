@@ -15,6 +15,7 @@ conda create --prefix ./elo_rating_env python=3.9 --yes
 conda activate ./elo_rating_env
 
 # Installing general data processing libraries
+conda install -c conda-forge gitpython --yes
 conda install -c conda-forge notebook --yes
 conda install -c conda-forge pandas --yes
 conda install -c conda-forge openpyxl --yes
