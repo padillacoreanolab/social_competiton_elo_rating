@@ -154,7 +154,7 @@ def iterate_elo_rating_calculation_for_dataframe(dataframe, winner_id_column, lo
         index_to_elo_rating_and_meta_data[winner_index]["win_draw_loss"] = winner_score
         index_to_elo_rating_and_meta_data[winner_index]["subject_ranking"] = get_ranking_from_elo_rating_dictionary(id_to_elo_rating, winner_id)
         index_to_elo_rating_and_meta_data[winner_index]["agent_ranking"] = get_ranking_from_elo_rating_dictionary(id_to_elo_rating, loser_id)
-
+        index_to_elo_rating_and_meta_data[winner_index]["pairing_index"] = 0
         for column in additional_columns:
             index_to_elo_rating_and_meta_data[winner_index][column] = row[column]  
 
@@ -168,6 +168,7 @@ def iterate_elo_rating_calculation_for_dataframe(dataframe, winner_id_column, lo
         index_to_elo_rating_and_meta_data[loser_index]["win_draw_loss"] = loser_score
         index_to_elo_rating_and_meta_data[loser_index]["subject_ranking"] = get_ranking_from_elo_rating_dictionary(id_to_elo_rating, loser_id)
         index_to_elo_rating_and_meta_data[loser_index]["agent_ranking"] = get_ranking_from_elo_rating_dictionary(id_to_elo_rating, winner_id)
+        index_to_elo_rating_and_meta_data[winner_index]["pairing_index"] = 1        
         for column in additional_columns:
             index_to_elo_rating_and_meta_data[loser_index][column] = row[column]  
 
