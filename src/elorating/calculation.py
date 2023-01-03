@@ -116,7 +116,16 @@ def iterate_elo_rating_calculation_for_dataframe(dataframe, winner_id_column, lo
     # Keeping track of the number of matches
     total_match_number = 1
 
-    for index, row in dataframe.dropna(subset=winner_id_column).iterrows():
+    # Making a copy in case there is an error with changing the type of the tie column
+    copied_dataframe = dataframe.copy()
+    # Changing the tie column type to bool
+    # So that we can filter out for booleans including False and 0
+    try:
+        copied_dataframe[tie_column] = copied_dataframe[tie_column].astype(bool)
+    except:
+        copied_dataframe = dataframe.copy()
+
+    for index, row in copied_dataframe.dropna(subset=winner_id_column).iterrows():
         # Getting the ID of the winner subject
         winner_id = row[winner_id_column]
         # Getting the ID of the loser subject
@@ -128,7 +137,8 @@ def iterate_elo_rating_calculation_for_dataframe(dataframe, winner_id_column, lo
 
         if tie_column:
             # When there is nothing in the tie column
-            if pd.isna(dataframe[tie_column][index]):
+            # Or when there is a false value indicating that it is not a tie
+            if pd.isna(copied_dataframe[tie_column][index]) or ~(copied_dataframe[tie_column][index]).any():
                 winner_score = 1
                 loser_score = 0
             # When there is value in the tie column
